@@ -112,4 +112,7 @@ public class EmailOTPAuthenticatorConstants {
     public static final String TEMPLATE_TYPE = "TEMPLATE_TYPE";
     public static final String EVENT_NAME = "EmailOTP";
     public static final String ATTRIBUTE_EMAIL_SENT_TO = "send-to" ;
+    public static final String OTP_GENERATED_TIME = "tokenGeneratedTime";
+    public static final String TOKEN_EXPIRE_TIME_IN_MILIS = "tokenExpirationTime";
+    public static final String OTP_EXPIRE_TIME_DEFAULT = "300000";
 }
