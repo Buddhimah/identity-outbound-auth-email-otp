@@ -199,6 +199,12 @@ public class EmailOTPAuthenticator extends OpenIDConnectAuthenticator implements
                         break;
                     }
                 }
+                AuthenticatedUser authenticatedUser1 = context.getSubject();
+                if (authenticatedUser1 != null) {
+                    username = authenticatedUser1.getUserName();
+                    userAttributes = authenticatedUser1.getUserAttributes();
+
+                }
 
                 if (username == null) {
                     if (log.isDebugEnabled()) {
